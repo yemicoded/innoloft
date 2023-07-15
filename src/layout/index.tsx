@@ -19,6 +19,7 @@ const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
     (state: RootState) => state.apiInfo
   );
   const dispatch = useDispatch<AppDispatch>();
+
   React.useEffect(() => {
     if (fetched.current === false) {
       dispatch(fetchApiInfo());
@@ -28,8 +29,7 @@ const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
       fetched.current = true;
     };
   }, []);
-  console.log("config", configuration);
-  console.log("isLoading", isLoading);
+
   return (
     <Container className="w-full bg-primary/5 lg:h-[100vh] lg:overflow-hidden">
       <Header />
