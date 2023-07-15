@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   );
   return (
     <footer className={classes}>
-      <Text>Developed By Oloko SODIQ Opeyemi (olokoopeyemi06@gmail.com)</Text>
+      <Text fontWeight="semibold" className="text-center">Developed By Oloko SODIQ Opeyemi (olokoopeyemi06@gmail.com)</Text>
     </footer>
   );
 };
