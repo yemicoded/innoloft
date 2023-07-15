@@ -4,9 +4,9 @@ import React from "react";
 
 const HomepageWrapper: React.FC = () => {
   return (
-    <Container>
+    <Container className="flex items-center justify-center">
       <Button variant="primary" href="/product">
-        View Product
+        Click to View Product
       </Button>
     </Container>
   );
