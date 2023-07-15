@@ -1,6 +1,7 @@
 import { TStore } from "types/store";
 import React from "react";
 
+// This store should be ignored. It is not used anywhere in the app anymore
 const useStore = () => {
   const [store, setStore] = React.useState<TStore | null>(null!);
   React.useEffect(() => {
