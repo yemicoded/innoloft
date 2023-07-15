@@ -26,12 +26,12 @@ const EditProductVideo: React.FC = () => {
             (Add a youtube embed link)
           </Text>
         </Text>
-        <Button variant="primary" className="hidden lg:flex" disabled>
+        <Button variant="primary" className="hidden lg:flex">
           Update URL
         </Button>
       </Container>
       <Input placeholder={store?.videoUrl} />
-      <Button variant="primary" className="lg:hidden" disabled>
+      <Button variant="primary" className="lg:hidden">
         Update URL
       </Button>
     </Container>

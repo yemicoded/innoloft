@@ -1,10 +1,10 @@
+// This store is not used anywhere in the app anymore. However, it was used to setup local storage store in place of API data
 export type TStore = {
-//   data: any;
-    image: string;
-    productTitle: string;
-    productDescription: string;
-    videoUrl: string;
-    offerDetails?: TOffer[];
+  image: string;
+  productTitle: string;
+  productDescription: string;
+  videoUrl: string;
+  offerDetails?: TOffer[];
 };
 
 export type TOffer = {

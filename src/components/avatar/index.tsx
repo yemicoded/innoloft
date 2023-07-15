@@ -42,9 +42,9 @@ const Avatar: React.FC<IAvatar> = ({
           <Image
             src={imgSrc}
             alt="avatar"
-            width={1500}
-            height={1500}
-            className="w-full h-full object-fill"
+            width={500}
+            height={500}
+            className="w-full h-full object-cover"
           />
         </button>
       </Link>

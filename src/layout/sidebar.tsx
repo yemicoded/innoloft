@@ -18,7 +18,7 @@ const SideBar: React.FC = () => {
     <Container className={classes}>
       <Container className="flex-1 py-[30px]">
         <Container className="flex items-center space-x-3">
-          <Avatar imgSrc="/assets/images/thumbnail.jpg" size="large" />
+          <Avatar imgSrc={data?.user?.profilePicture} size="large" />
           <Container>
             <Text fontWeight="semibold" className="text-primary text-[14px]">
               {data?.user?.firstName} {data?.user?.lastName}

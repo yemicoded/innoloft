@@ -107,7 +107,7 @@ const EditProductOverview: React.FC = () => {
             />
           </Container>
           <Container className="flex items-center space-x-3">
-            <Avatar imgSrc="/assets/images/thumbnail.jpg" size="large" />
+            <Avatar imgSrc={data?.user?.profilePicture} size="large" />
             <Container>
               <Text fontWeight="semibold" className="text-primary text-[16px]">
                 {data?.user?.firstName} {data?.user?.lastName}

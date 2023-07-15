@@ -2,12 +2,11 @@ import { Container } from "components/container";
 import React from "react";
 import Header from "./header";
 import SideBar from "./sidebar";
-import StoreProvider from "context/store-context";
-import getProductInfo from "utils/database/get-product-info";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchApiInfo, fetchConfiguration } from "store/slices/api-slice";
 import { AppDispatch, RootState } from "store";
 import axios from "axios";
+import Footer from "./footer";
 
 interface IDashboardLayout {
   children: React.ReactNode;
@@ -15,9 +14,6 @@ interface IDashboardLayout {
 
 const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
   const fetched = React.useRef<boolean>(false);
-  const { data, isLoading, configuration } = useSelector(
-    (state: RootState) => state.apiInfo
-  );
   const dispatch = useDispatch<AppDispatch>();
 
   React.useEffect(() => {
@@ -47,6 +43,7 @@ const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
             </main>
           </Container>
         </Container>
+        <Footer />
       </Container>
     </Container>
   );
