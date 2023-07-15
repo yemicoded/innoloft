@@ -10,7 +10,7 @@ import { IoIosNotifications } from "react-icons/io";
 
 const Footer: React.FC = () => {
   const classes = classNames(
-    "w-full bg-primary flex items-center justify-center h-[40px] text-white text-[14px]"
+    "w-full bg-primary flex items-center justify-center h-[40px] text-white text-[14px] py-3"
   );
   return (
     <footer className={classes}>
