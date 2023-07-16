@@ -29,7 +29,7 @@ const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
   return (
     <Container className="w-full bg-primary/5 lg:h-[100vh] lg:overflow-hidden">
       <Header />
-      <Container className="w-full h-fit lg:max-h-[calc(100vh-70px)] mt-[70px] overflow-auto">
+      <Container className="w-full h-full lg:max-h-[calc(100vh-70px)] mt-[70px] lg:overflow-auto">
         <Container className="w-[95%] md:w-[90%] mx-auto relative">
           <Container className="lg:ml-auto min-h-[calc(100vh-70px)] relative">
             <Container className="hidden lg:block">
@@ -43,7 +43,7 @@ const DashboardLayout: React.FC<IDashboardLayout> = ({ children }) => {
             </main>
           </Container>
         </Container>
-        <Footer />
+        {/* <Footer /> */}
       </Container>
     </Container>
   );
